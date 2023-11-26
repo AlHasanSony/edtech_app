@@ -1,41 +1,55 @@
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:edtech_app/providers/course_provider.dart';
-import 'package:edtech_app/screens/dashboard/course_player_screen.dart';
-import 'package:provider/provider.dart';
+import 'dashboard_screen.dart';
 
 class EnrolledCoursesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // Assuming you have a CourseProvider to manage the course-related data
-    CourseProvider courseProvider = Provider.of<CourseProvider>(context);
-
     return Scaffold(
       appBar: AppBar(
-        title: Text('Enrolled Courses'),
+        title: Text('Dashboard'),
       ),
-      body: ListView.builder(
-        itemCount: courseProvider.enrolledCourses.length,
-        itemBuilder: (context, index) {
-          var course = courseProvider.enrolledCourses[index];
-
-          return ListTile(
-            title: Text(course.courseTitle),
-            subtitle: Text(course.courseDescription),
-            trailing: ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => CoursePlayerScreen(course: course),
-                  ),
-                );
-              },
-              child: Text('Continue Course'),
-            ),
-          );
-        },
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Welcome to the Dashboard!',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              CustomContainer(
+                title: 'Learn Dart and Flutter',
+                buttonText: 'Continue Course',
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => EnrolledCoursesScreen(),
+                    ),
+                  );
+                  // Add the logic for the first container's continue button
+                },
+              ),
+              CustomContainer(
+                title: 'Learn Python',
+                buttonText: 'Continue Course',
+                onPressed: () {
+                  // Add the logic for the second container's continue button
+                },
+              ),
+              CustomContainer(
+                title: 'Learn Java',
+                buttonText: 'Continue Course',
+                onPressed: () {
+                  // Add the logic for the third container's continue button
+                },
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
 }
-

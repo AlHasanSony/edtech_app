@@ -7,6 +7,7 @@ import 'package:provider/provider.dart';
 
 import '../../utils/navigation.dart';
 import '../dashboard/dashboard_screen.dart';
+import '../dashboard/enrolled_courses_screen.dart';
 
 class SignupScreen extends StatefulWidget {
   @override
@@ -64,7 +65,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => DashboardScreen(),
+                          builder: (context) => EnrolledCoursesScreen(),
                         ),
                       );
                     }

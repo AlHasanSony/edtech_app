@@ -4,6 +4,7 @@ import 'package:edtech_app/screens/auth/login_screen.dart';
 import 'package:edtech_app/screens/auth/signup_screen.dart';
 import 'package:edtech_app/screens/dashboard/dashboard_screen.dart';
 import '../screens/dashboard/course_player_screen.dart';
+import '../screens/dashboard/enrolled_courses_screen.dart';
 
 class Navigation {
   static const String loginRoute = '/login';
@@ -18,7 +19,7 @@ class Navigation {
       case signupRoute:
         return MaterialPageRoute(builder: (_) => SignupScreen());
       case dashboardRoute:
-        return MaterialPageRoute(builder: (_) => DashboardScreen());
+        return MaterialPageRoute(builder: (_) => EnrolledCoursesScreen());
       case coursePlayerRoute:
       // You may need to extract course data from settings.arguments
       // and pass it to CoursePlayerScreen constructor

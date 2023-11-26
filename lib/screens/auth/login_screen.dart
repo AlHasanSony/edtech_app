@@ -6,6 +6,7 @@ import 'package:edtech_app/utils/navigation.dart';  // Updated import
 import 'package:provider/provider.dart';
 import 'package:edtech_app/utils/constants.dart';
 import '../../utils/navigation.dart';
+import '../dashboard/enrolled_courses_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -60,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => DashboardScreen(),
+                          builder: (context) => EnrolledCoursesScreen(),
                         ),
                       );
                     }
