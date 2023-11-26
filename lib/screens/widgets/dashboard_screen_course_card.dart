@@ -1,4 +1,4 @@
-import 'package:edtech_app/screens/dashboard/enrolled_courses_screen.dart';
+import 'package:edtech_app/screens/dashboard/dashboard_courses_screen.dart';
 import 'package:flutter/material.dart';
 
 class CustomContainer extends StatelessWidget {

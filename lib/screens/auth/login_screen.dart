@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:edtech_app/screens/dashboard/dashboard_screen.dart';
+import 'package:edtech_app/screens/widgets/dashboard_screen_course_card.dart';
 import 'package:edtech_app/providers/auth_provider.dart' as AppAuthProvider; // Updated import
 import 'package:edtech_app/utils/navigation.dart';  // Updated import
 import 'package:provider/provider.dart';
 import 'package:edtech_app/utils/constants.dart';
 import '../../utils/navigation.dart';
-import '../dashboard/enrolled_courses_screen.dart';
+import '../dashboard/dashboard_courses_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override

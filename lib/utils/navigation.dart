@@ -2,9 +2,9 @@ import 'package:edtech_app/models/course.dart';
 import 'package:flutter/material.dart';
 import 'package:edtech_app/screens/auth/login_screen.dart';
 import 'package:edtech_app/screens/auth/signup_screen.dart';
-import 'package:edtech_app/screens/dashboard/dashboard_screen.dart';
+import 'package:edtech_app/screens/widgets/dashboard_screen_course_card.dart';
 import '../screens/dashboard/course_player_screen.dart';
-import '../screens/dashboard/enrolled_courses_screen.dart';
+import '../screens/dashboard/dashboard_courses_screen.dart';
 
 class Navigation {
   static const String loginRoute = '/login';

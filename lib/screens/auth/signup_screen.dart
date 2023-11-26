@@ -6,8 +6,8 @@ import 'package:edtech_app/utils/constants.dart';
 import 'package:provider/provider.dart';
 
 import '../../utils/navigation.dart';
-import '../dashboard/dashboard_screen.dart';
-import '../dashboard/enrolled_courses_screen.dart';
+import '../widgets/dashboard_screen_course_card.dart';
+import '../dashboard/dashboard_courses_screen.dart';
 
 class SignupScreen extends StatefulWidget {
   @override
