@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../widgets/dashboard_screen_course_card.dart';
@@ -8,7 +7,14 @@ class EnrolledCoursesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Dashboard'),
+        title: Text(
+          'Dashboard',
+          style: TextStyle(
+            fontWeight: FontWeight.w400,
+            fontSize: 20,
+            color: Colors.black45,
+          ),
+        ),
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -16,8 +22,12 @@ class EnrolledCoursesScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Welcome to the Dashboard!',
-                style: TextStyle(fontSize: 18.0),
+                'Courses',
+                style: TextStyle(
+                  fontSize: 24.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blueAccent,
+                ),
               ),
               CustomContainer(
                 title: 'Learn Dart and Flutter',
