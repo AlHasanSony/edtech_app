@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # edtech_app
 
 A new Flutter project.
