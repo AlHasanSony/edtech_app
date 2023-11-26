@@ -1,3 +1,4 @@
+import 'package:edtech_app/screens/dashboard/enrolled_courses_screen.dart';
 import 'package:flutter/material.dart';
 
 class CustomContainer extends StatelessWidget {
@@ -23,7 +24,8 @@ class CustomContainer extends StatelessWidget {
         borderRadius: BorderRadius.circular(16.0),
         boxShadow: [
           BoxShadow(
-            color: Colors.blue.withOpacity(0.5), // Change this to your desired glow color
+            color: Colors.blue
+                .withOpacity(0.5), // Change this to your desired glow color
             spreadRadius: 5,
             blurRadius: 10,
             offset: Offset(0, 3), // Adjust the offset as needed
@@ -60,7 +62,6 @@ class CustomContainer extends StatelessWidget {
               ),
             ),
           )
-
         ],
       ),
     );
@@ -87,6 +88,12 @@ class DashboardScreen extends StatelessWidget {
                 title: 'Learn Dart and Flutter',
                 buttonText: 'Continue Course',
                 onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => EnrolledCoursesScreen(),
+                    ),
+                  );
                   // Add the logic for the first container's continue button
                 },
               ),
