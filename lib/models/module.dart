@@ -11,6 +11,8 @@ class Module {
     );
   }
 
+  get isCompleted => null;
+
   Map<String, dynamic> toJson() {
     return {
       'title': title,
